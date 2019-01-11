@@ -12,7 +12,7 @@ channelID = 656272;
 readAPIKey = 'EYMUGIDZHNGXNHSC';
 
 [data,timestamps,channelInfo]  = thingSpeakRead(channelID,'numPoints', 8000,'ReadKey',readAPIKey);
-T = data(:,1); 
+T = data(:,1)
 H = data(:,2); 
 
 [T_clean,TF] = rmmissing(T);
